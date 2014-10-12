@@ -1,0 +1,64 @@
+\documentclass[a4paper,12pt,english]{scrartcl}
+
+% Language
+\usepackage{polyglossia}
+\setmainlanguage[variant=american]{english}
+
+\usepackage[math-style=TeX]{unicode-math}
+\usepackage{graphicx}
+
+% \todo{Add this.}
+\usepackage[backgroundcolor=red]{todonotes}
+
+% Text in englischen Anführungszeichen mit \enquote{Very important}
+\usepackage[autostyle=true,english=american]{csquotes}
+
+% Ränder auf 3cm setzen
+\usepackage[paper=a4paper,left=30mm,right=30mm,top=30mm,bottom=30mm]{geometry}
+
+% Titelfont aus normal setzen
+\setkomafont{disposition}{\normalfont}
+
+% Titel höher
+\usepackage{titling}
+\setlength{\droptitle}{-5em}
+
+% Zeilenabstand 1.5
+\linespread{1.5}
+
+\title{Is Computer Science Science? \\ {\large A summary}}
+
+\begin{document}
+\maketitle
+
+% Keine Seitenzahlen
+\thispagestyle{empty}
+\pagestyle{empty}
+
+In his paper \enquote{Is Computer Science Science?}, Peter J. Denning tries
+to answer the question wether computer science is an actual scientific field.
+The rationale behind the question is easily explained: all sciences are about
+fundamental laws of nature whereas the subject of computer science is
+man-made.
+
+The author explains that computer science is a blend of three disciplines:
+computing science, engineering and mathematics. As any other science, it
+proposes hypotheses and test them through experiments. However, computing
+science does not study man-made objects. It studies information processes.
+The computers \textemdash{} as in many other fields such as physics or chemistry
+\textemdash{} are just the tools for conducting efficient research.
+
+Depending on which research area in computing people come from, they have
+different opinions weather computer science is a science or an art. The author
+concludes that there it is both. He then questions if computer science has
+elements other scientific areas have: depth, a future and credibility.
+
+Depth meaning computer science has fundamental principles: it has; a future:
+yes, since it combines with other disciplines to create new research areas.
+The problem of credibility however is self-inflicted. Too many times the field
+of computer science has claimed to be able to do something but ultimately
+failed to deliver (i.e. artificial intelligence). This kind of marketing
+however does not adhere to the scientific standard. Fortunately, this problem
+is fading away, as younger scientists enter the field.
+
+\end{document}
