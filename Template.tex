@@ -1,0 +1,45 @@
+\documentclass[a4paper,12pt,english]{scrartcl}
+
+% Language
+\usepackage{polyglossia}
+\setmainlanguage[variant=american]{english}
+
+\usepackage[math-style=TeX]{unicode-math}
+\usepackage{graphicx}
+
+\usepackage{isodate}
+\origdate % Make today print in another format
+
+\linespread{1.15}
+
+% Geiler header
+\usepackage{fancyhdr}
+\fancyhf{} % clear all header and footer fields
+\fancyhead[L]{{\small \textsf{WS 14/15, NYT}}}
+\fancyhead[C]{{\small \textsf{Homework XXX}}}
+\fancyhead[R]{{\small \textsf{\today}}}
+
+% Text in englischen Anführungszeichen mit \enquote{Very important}
+\usepackage[autostyle=true,english=american]{csquotes}
+
+% Ränder auf 3cm setzen
+\usepackage[paper=a4paper,left=20mm,right=20mm,top=30mm,bottom=30mm]{geometry}
+
+\begin{document}
+\pagestyle{fancy} % eigenen Seitestil aktivieren
+
+\noindent
+\textbf{\textsf{{\large [XXX] Name of paper 1}}}
+\vspace{2mm}
+
+Insert some text here!
+
+\vspace{8mm}
+
+\noindent
+\textbf{\textsf{{\large [XXX] Name of paper 2}}}
+\vspace{2mm}
+
+Insert some text here!
+
+\end{document}
