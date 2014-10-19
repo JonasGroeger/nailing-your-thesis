@@ -7,8 +7,14 @@
 \usepackage[math-style=TeX]{unicode-math}
 \usepackage{graphicx}
 
-% \todo{Add this.}
-\usepackage[backgroundcolor=red]{todonotes}
+\usepackage{isodate}
+\origdate % Make today print in another format
+
+% Geiler header
+\usepackage{fancyhdr}
+\fancyhf{} % clear all header and footer fields
+\fancyhead[L]{{\small \textsf{[WS 14/15, NYT] Homework 1}}}
+\fancyhead[R]{{\small \textsf{12th October 2014}}}
 
 % Text in englischen Anführungszeichen mit \enquote{Very important}
 \usepackage[autostyle=true,english=american]{csquotes}
@@ -16,24 +22,40 @@
 % Ränder auf 3cm setzen
 \usepackage[paper=a4paper,left=30mm,right=30mm,top=30mm,bottom=30mm]{geometry}
 
-% Titelfont aus normal setzen
-\setkomafont{disposition}{\normalfont}
-
-% Titel höher
-\usepackage{titling}
-\setlength{\droptitle}{-5em}
-
-% Zeilenabstand 1.5
-\linespread{1.5}
-
-\title{Is Computer Science Science? \\ {\large A summary}}
-
 \begin{document}
-\maketitle
+\pagestyle{fancy} % eigenen Seitestil aktivieren
 
-% Keine Seitenzahlen
-\thispagestyle{empty}
-\pagestyle{empty}
+\noindent
+\textbf{\textsf{{\large [F74] F Feynman, Richard P. (1974). \enquote{Cargo Cult Science}. Engineering and Science, 1974.}}}
+\vspace{2mm}
+
+The author begins by providing a short history how science evolved: by
+debunking myths. Science as a method to test if certain isolated ideas work or
+not. He decided to investigate why people believed in witch doctors and alike
+and found out, that non of those phenomena actually work.
+
+The question \enquote{what else is there what we believe?} arises: how to
+treat criminals, how we educate and various other pseudo-sciences. The author
+introduces the term \enquote{Cargo Cult Science} describing sciences that are
+actually not scientific and practices that don't work.
+
+Futhermore, the question how to be scientifc is answered. Provide all the
+information to judge or value a contribution, not just the information
+that you would like to provide and concludes that we don't actually teach this
+scientific integrity in class.
+
+He advices that we should not fool the layman or one seeking advice from us.
+Always be honest and conduct experiments unbiased. This involves making all
+results public, not just those we want to in order to achieve something such
+as reputation or alike.
+Sometimes, this scientific integrity or utter honesty is disallowed by
+political issues or other challenges in life and sometimes even lazyness.
+
+\vspace{8mm}
+
+\noindent
+\textbf{\textsf{{\large [H+04] Denning, Peter J. (2005). \enquote{Is Computer Science a Science?} CACM vol. 48, no. 4 (April 2005), pp 27-31.}}}
+\vspace{2mm}
 
 In his paper \enquote{Is Computer Science Science?}, Peter J. Denning tries
 to answer the question wether computer science is an actual scientific field.
@@ -60,5 +82,4 @@ of computer science has claimed to be able to do something but ultimately
 failed to deliver (i.e. artificial intelligence). This kind of marketing
 however does not adhere to the scientific standard. Fortunately, this problem
 is fading away, as younger scientists enter the field.
-
 \end{document}
