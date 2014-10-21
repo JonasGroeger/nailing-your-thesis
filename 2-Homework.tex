@@ -1,43 +1,51 @@
-\documentclass[a4paper,12pt,english]{scrartcl}
+\documentclass[a4paper,12pt]{scrartcl}
 
 % Language
 \usepackage{polyglossia}
 \setmainlanguage[variant=american]{english}
 
-\usepackage[math-style=TeX]{unicode-math}
-\usepackage{graphicx}
-
-\usepackage{isodate}
-\origdate % Make today print in another format
-
+% Zeilenabstand
 \linespread{1.15}
 
-% Geiler header
+% Write something in bold, sans-serif and a little larger to indicate the title
+% Usage: \papertitle{DP79}{Title of the paper}
+\newcommand{\papertitle}[2]{
+	\noindent
+	\textbf{\textsf{{\large
+		[#1] #2
+	}}}
+	\vspace{2mm}
+}
+
+% Eigener Seitenstil (Kopf- und Fußleiste)
 \usepackage{fancyhdr}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{} % Alles in Kopf- und Fußleisten entfernen
 \fancyhead[L]{{\small \textsf{WS 14/15, NYT}}}
 \fancyhead[C]{{\small \textsf{Homework 2}}}
-\fancyhead[R]{{\small \textsf{12th October 2014}}}
+\fancyhead[R]{{\small \textsf{19th October 2014}}}
 \fancyfoot[C]{\thepage}
 
-% Text in englischen Anführungszeichen mit \enquote{Very important}
+% Text in englischen Anführungszeichen
+% Usage: \enquote{To be or not to be.}
 \usepackage[autostyle=true,english=american]{csquotes}
 
-% Ränder auf 3cm setzen
+% Ränder
 \usepackage[paper=a4paper,left=20mm,right=20mm,top=30mm,bottom=30mm]{geometry}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{document}
-\pagestyle{fancy} % eigenen Seitestil aktivieren
+\pagestyle{fancy} % Eigenen Seitestil aktivieren
 
-\noindent
-\textbf{\textsf{{\large [DP79] De Millo, Lipton, Perlis. 1979. Social processes and proofs of theorems and programs. Commun. ACM 22, 5 (May 1979), 271-280.}}}
-\vspace{2mm}
+\papertitle{DP79}{De Millo, Lipton, Perlis. 1979. Social processes and proofs of
+				  theorems and programs. Commun. ACM 22, 5 (May 1979), 271-280.}
 
-The paper about the social processes that take place in mathematics regarding
-proofs and how this process can or cannot be applied to verification of computer
-programs. At first it is argued that computer programming should become more
-like mathematics. One instance how that can be done is by automatic program
-verification.
+The paper is about the social processes that takes place in mathematics
+regarding proofs and how this process can or cannot be applied to verification
+of computer programs. At first it is argued that computer programming should
+become more like mathematics. One instance how that can be done is by automatic
+program verification.
 
 Maths is a social, informal, intuitive, organic human process, a community
 project. It uses proofs to verify theorems. Other than what its name suggests,
@@ -47,9 +55,9 @@ truth. These proofs and theorems have to be believed in. This belief is created
 by a social process that tries to make mathematicians feel confident about a
 theorem	or a proof.
 
-The social process starts with a proof. A proof is just a spoken message or at
-most a sketch. If the proof generates no excitement among friends and collegues
-if is most probably discarded. However, if the proof generates excitement, a
+The social process starts with a proof. It is just a spoken message or at most
+a sketch. If the proof generates no excitement among friends and collegues it is
+most probably discarded. However, if the proof generates excitement, a
 polished version will be made. After this polished version gets
 published \textemdash{} it is not uncommon that papers get rejected from
 journals \textemdash{} more people will read it. After a certain cooldown
@@ -73,42 +81,50 @@ program verification and mathematical proof fails as there are too many
 differences.
 
 The reason why program verification will fail is because it does not have the
-same preconditions regarding programs (proofs) like maths. The missing social
+same preconditions regarding programs like maths with proofs. The missing social
 process is just a manifestation of that problem.
 
 \vspace{8mm}
 
-\noindent
-\textbf{\textsf{{\large [H+04] Hevner, March, Park, Ram. 2004. Design science in information systems research. MIS Q. 28, 1 (March 2004), 75-105.}}}
-\vspace{2mm}
+\papertitle{H+04}{Hevner, March, Park, Ram. 2004. Design science in information
+				  systems research. MIS Q. 28, 1 (March 2004), 75-105.}
 
-Introduction
-	Aim of the paper is to inform the community of Information Systems researchers how to do research in Information Systems.
-	There are two research paradigms: behavioural science and design science.
-	Behavioural science has its roots in the natural sciences. It seeks to develop and justify theories and aims at the truth.
-	Design science has its roots in engineering. It seeks to create innovations or artifacts and aims at utility.
-A Framework for doing IS research using design science
-	IS research must adress the interaction between business strategy, IT strategy, organizational structure and IS infrastructure
-	The paper proposes a IS research framework.
-	Given a business need, IS research is conducted.
-	IS research uses the knowledge base by applying foundations and methodologies to solve the business need.
-	The development is done in two complementary phases.
-		Design science develops artifacts and theories.
-		Behavioural science assesses, justifies and evaluates these artifacts and theories.
-	The gained knowledge will be used back in design science in order to refine artifacts or theories.
-	The artifact can now be used in the business environment.
-	Knowledge gained through building the artifact is added to the knowledge base.
+The aim of the paper is to inform the community of Information Systems
+researchers about how to do research in Information Systems (IS).
 
-Seven guidelines for Design Science in Information Systems Research
-	Design as an artifact: research must produce a viable artifact.
-	Problem relevance: Research must solve a business problem.
-	Design Evaluation: Quality, utility and efficacy must be demonstrated.
-	Research contributions: Research must provide contributions back to science.
-	Research rigor: Rigorous methods in both development and evaluation must be used.
-	Design as a Search Process: Design using available means while including the issues of the target environment.
-	Communication of Research: both for management and technology people
+In general, there are two research paradigms: behavioural science and design
+science. Behavioural science has its roots in the natural sciences. It seeks to
+develop and justify theories and aims at the truth. Design science has its roots
+in engineering. It seeks to create innovations or artifacts and aims at utility.
+
+The paper then introduces a framework for doing IS research using design
+science. It says that regarding a top-down approach, research must address the
+interaction between business strategy, Information Technology strategy,
+organizational structure and IS infrastructure.
+
+Given a business need, IS research is conducted. It uses the knowledge base
+(foundations and methodologies) of IS to solve the business need. The
+development is done in two complementary phases. In the first, design science
+develops artifacts and theories. In the second, behavioural science assesses,
+justifies and evaluates these artifacts and theories. The gained knowledge will
+be used back in design science in order to refine artifacts or theories. Finally
+the artifact can be used in the business environment. Knowledge gained by
+building the artifact is added back to the knowledge base for future research
+and application.
+
+Lastly, the paper introduces seven guidelines for doing design science research
+in IS: (1) Research must provide a viable artifact, (2) Research must solve a
+business problem, (3) Quality, utility and efficacy of the artifact must be
+demonstrated, (4) Research must provide contributions back to science,
+(5) Rigorous methods in both development and evaluation must be used, (6) Design
+using available means while including the issues of the target environment,
+(7) Communicate research results in a suitable way both for management and
+technology people.
 
 \end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % Computer programming should be more like mathematics.
 % 	One instance how to do that is by automatic program verification.
@@ -138,3 +154,35 @@ Seven guidelines for Design Science in Information Systems Research
 % 	Thus, they cannot acquire credibility gradually (as in maths); either completely believe in them or dont.
 % 	The analogy of program verification and mathematical proof fails.
 % 	Program verification will fail because it does not have the social processes like maths.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Introduction
+% 	Aim of the paper is to inform the community of Information Systems researchers how to do research in Information Systems.
+% 	There are two research paradigms: behavioural science and design science.
+% 	Behavioural science has its roots in the natural sciences. It seeks to develop and justify theories and aims at the truth.
+% 	Design science has its roots in engineering. It seeks to create innovations or artifacts and aims at utility.
+% A Framework for doing IS research using design science
+% 	IS research must adress the interaction between business strategy, IT strategy, organizational structure and IS infrastructure
+% 	The paper proposes a IS research framework.
+% 	Given a business need, IS research is conducted.
+% 	IS research uses the knowledge base by applying foundations and methodologies to solve the business need.
+% 	The development is done in two complementary phases.
+% 		Design science develops artifacts and theories.
+% 		Behavioural science assesses, justifies and evaluates these artifacts and theories.
+% 	The gained knowledge will be used back in design science in order to refine artifacts or theories.
+% 	The artifact can now be used in the business environment.
+% 	Knowledge gained through building the artifact is added to the knowledge base.
+
+% Seven guidelines for Design Science in Information Systems Research
+% 	Design as an artifact: research must produce a viable artifact.
+% 	Problem relevance: Research must solve a business problem.
+% 	Design Evaluation: Quality, utility and efficacy must be demonstrated.
+% 	Research contributions: Research must provide contributions back to science.
+% 	Research rigor: Rigorous methods in both development and evaluation must be used.
+% 	Design as a Search Process: Design using available means while including the issues of the target environment.
+% 	Communication of Research: both for management and technology people
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
