@@ -1,0 +1,170 @@
+\documentclass[a4paper,12pt,english]{scrartcl}
+
+% Language
+\usepackage{polyglossia}
+\setmainlanguage[variant=american]{english}
+
+% Make \today print in format "NN<st|nd|rd|th> MM YYYY"
+\usepackage{isodate}
+\origdate
+
+\linespread{1.15}
+
+% Write something in bold, sans-serif and a little larger to indicate the title
+% Usage: \papertitle{DP79}{Title of the paper}
+\newcommand{\papertitle}[2]{
+    \noindent
+    \textbf{\textsf{{\large
+        [#1] #2
+    }}}
+    \vspace{2mm}
+}
+
+% Own pagestyle (header and footer)
+\usepackage{fancyhdr}
+\fancyhf{} % Clear header and footer content
+\fancyhead[L]{{\small \textsf{WS 14/15, NYT}}}
+\fancyhead[C]{{\small \textsf{Homework 3}}}
+\fancyhead[R]{{\small \textsf{25th October 2014}}}
+%\fancyfoot[C]{\thepage}
+
+% Text in quotes
+% Usage: \enquote{To be or not to be.}
+\usepackage[autostyle=true,english=american]{csquotes}
+
+% Borders
+\usepackage[paper=a4paper,left=20mm,right=20mm,top=30mm,bottom=30mm]{geometry}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\pagestyle{fancy} % Activate own pagestyle
+
+\papertitle{MPG09}{Max-Planck-Gesellschaft. 2009. Regeln zur Sicherung guter
+                   wissenschaftlicher Praxis.}
+
+The paper is about rules for good scientific practice, specifically how that is
+done at the Max-Planck-Gesellschaft.
+
+First, it gives an introduction about why this paper is relevant, about why we
+want to have good scientific practices. It concludes that science in the first
+place wants to create new knowledge, not fake it. If we do fake it, we lose
+trust from the public and other scientists and ultimately lose the basis of our
+work.
+
+There are conditions for good and responsible scientific practice. Some of the
+general principles are cooperation, being open to critique and be sceptic about
+your own and the results of others. Furthermore, you should have enough
+self-control and make your basic assumptions about the research subject clear.
+For publication, you should try to make your research contributions freely
+available if possible and provide others with a fair review process.
+In addition, leadership and supervision should be part of a research facility.
+In there, junior scientists should be trained in good scientific research
+practices and supervised.
+Since the results of research are often times not applied very soon, primary
+data and documentation must be kept and made accessible in a readable state for
+at least 10 years - anonymized if possible. Publications should make their
+results and methods comprehensible and complete.
+Then there is a part of issue resolving. A go-to-guy should be assigned.
+Whisleblowers and people that have other issues should have a person to talk to
+without their names being disclosed.
+Same goes for conflict resolution betwee scientific and political, business or
+financal interests: science has priority. Therefore one must disclose any
+interests or ties beween science and business.
+
+\vspace{8mm}
+
+\papertitle{K+14}{Kramer, Guillory, Hancock. 2014. Experimental Evidence of
+                  Massive-scale Emotional Contagion through Social Networks.
+                  PNAS. 111, 24 (March 2014), 8788–8790.}
+
+It is known that longer-lasting moods (e.g., depression or happiness) can be
+transferred through networks. This paper suggests that this emotional contaigon
+also occurs outside of person. The research question is weather \textit{mood can
+be transferred outside of in-person interaction through social-networks}.
+
+The hypothesis they provide is if exposure to emotions let people to post
+content that was consistent with the exposed emotion. The experiment will
+reduce or increase the amount of emotional content in the news feed of persons.
+The experiment is split in two: a positive and a negative one by reducing
+positive or negative news feed content.
+The results were that people who had positive content reduced had a larger
+percentage of negative and a smaller percentage of positive words. The opposite
+effect also occurred. That means that emotions expressed by friends via online
+social networks influence our own moods. However, the effect size is quite small
+but may add up and influence other secondary variables like health care costs.
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Rules for good scientific practice at Max-Planck
+% Why
+	% If we dont do it we lose trust from
+		% public
+		% other scientists
+	% we want to create knowledge, not fake it
+
+% Conditions for responsible scientific practice
+	% General principles
+		% Cooperation (block others etc)
+		% Open critique & sceptizism about own and other results
+		% Self-control & making assumptions clear
+		% Make everything open if possible
+		% Fair review process
+	% Cooperation
+		% Leadership, supervision, conflict resolution and quality control should exist in a research facility
+		% Sharing work and integrating it
+	% Junior scientists should be trained in scientific research practices
+		% Cooperation with universities
+		% Supervision of junior scientists / PHDs etc.
+	% Primary data & Documentation
+		% Must be kept and made accessible in a readable state for at least 10y
+	% data privacy
+		% all data must be anonymized
+		% if its not possible, separate the data and the persons information through indirection
+	% Publications
+		% Results and their methods should be comprehensible and complete
+		% Authors should have contributed substantial parts of a publication
+	% Go-To-Guy
+		% If one is suspicious or about violations of responsible scientific practice
+	% Conflict between scientific and political/business/financal interests
+		% Science has priority
+		% One must disclose any interests or ties beween science and business.
+	% Whistleblowers
+		% Whitleblowers often have a fear of reprisal if they disclose bad scientific behaviour.
+		% Must be protected and name must not disclosed
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Mood can be transferred through networks.
+% This effect has been criticized
+    % Interaction rather than emotion
+    % Are nonverbal (silent) cues necessary for contaigon to occur of are verbal ones sufficient?
+    % Happiness of others -> Self are depressed
+% Research Question
+    % Can mood be transferred outside of in-person interaction through social-networks?
+% Hypothesis
+    % Exposure to emotions let people to post content that was consistent with the exposed emotion.
+% Experiment
+    % Reducing the amount of emotional content in the News Feed.
+    % Positive and negative experiment by reducing positive / negative News Feed content.
+        % Control condition: Similar portion of posts were omitted from the News Feed at random.
+        % Dependent variables: The percentage of all words produced by a person that was positive or negative.
+        % People being exposed to less positive posts should be less positive compared to the control group.
+        % People being exposed to less positive posts should be more negative compared to the control group.
+% Results
+    % People who had positive content reduced had a larger percentage of negative and a smaller percentage of positive words.
+    % The opposite effect also occurred.
+    % Emotions expressed by friends viao online social networks influence our own moods.
+
+% Discussion
+    % News Feed is not directed: Contaigon could not be just the result of interaction with a happy or sad partner
+    % Withdrawal effect debunked: Seeing positive posts did not make us negative but positive
+    % Small effect sized, but may add up, even in offline behavior
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
