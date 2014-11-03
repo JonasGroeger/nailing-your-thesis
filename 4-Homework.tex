@@ -1,0 +1,66 @@
+\documentclass[a4paper,12pt,english]{scrartcl}
+
+% Language
+\usepackage{polyglossia}
+\setmainlanguage[variant=american]{english}
+
+% Make \today print in format "NN<st|nd|rd|th> MM YYYY"
+\usepackage{isodate}
+\origdate
+
+\linespread{1.15}
+
+% Write something in bold, sans-serif and a little larger to indicate the title
+% Usage: \papertitle{DP79}{Title of the paper}
+\newcommand{\papertitle}[2]{
+	\noindent
+	\textbf{\textsf{{\large
+		[#1] #2
+	}}}
+	\vspace{2mm}
+}
+
+% Own pagestyle (header and footer)
+\usepackage{fancyhdr}
+\fancyhf{} % Clear header and footer content
+\fancyhead[L]{{\small \textsf{WS 14/15, NYT}}}
+\fancyhead[C]{{\small \textsf{Homework 4}}}
+\fancyhead[R]{{\small \textsf{\today}}}
+\fancyfoot[C]{\thepage}
+
+% Text in quotes
+% Usage: \enquote{To be or not to be.}
+\usepackage[autostyle=true,english=american]{csquotes}
+
+% Borders
+\usepackage[paper=a4paper,left=20mm,right=20mm,top=30mm,bottom=30mm]{geometry}
+
+\begin{document}
+\pagestyle{fancy} % Activate own pagestyle
+
+\papertitle{CS07}{J. Corbin and A. Strauss, \enquote{Introduction,} in Basics of Qualitative Research: Techniques and Procedures for Developing Grounded Theory, 3rd ed. Thousand Oaks, CA: Sage Publications, 2007, ch. 1.}
+
+% Grounded theory
+	% Chicago Interactionism
+	% Pragmatism
+	% Assumptions
+
+Grounded theory is a methodology to build theory from data derived from
+qualitytive analysis. The presented methodology's epistemology presented in this
+chapter is based on two different traditions: Chicago Interactionism and
+Pragmatism. Chicago Interactionism is the fact that human beings do not react to
+actions of others but interpret them and act based on this interpretation.
+Pragmatism Pragmatism rejects the idea that the function of thought is to
+describe or represent. It embraces the idea that thought is an instrument to
+predict, to take action or to solve problems. Because the world is complex and
+ambiguous we cannot create a big methodology that works for everyone and
+everything. Thus, there are assumptions behind our methodology (the auhors list
+16 assumptions about actions, interactions and others).
+
+\vspace{8mm}
+
+\papertitle{CS07}{J. Corbin and A. Strauss, \enquote{Practical Considerations,} in Basics of Qualitative Research: Techniques and Procedures for Developing Grounded Theory, 3rd ed. Thousand Oaks, CA: Sage Publications, 2007, ch. 2.}
+
+Insert some text here!
+
+\end{document}
