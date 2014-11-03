@@ -10,14 +10,13 @@
 
 \linespread{1.15}
 
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries\sffamily}{}{0pt}{}
+
 % Write something in bold, sans-serif and a little larger to indicate the title
 % Usage: \papertitle{DP79}{Title of the paper}
 \newcommand{\papertitle}[2]{
-	\noindent
-	\textbf{\textsf{{\large
-		[#1] #2
-	}}}
-	\vspace{2mm}
+	\section{[#1] #2}
 }
 
 % Own pagestyle (header and footer)
@@ -32,8 +31,12 @@
 % Usage: \enquote{To be or not to be.}
 \usepackage[autostyle=true,english=american]{csquotes}
 
+% Subliminal refinements towards typographical perfection
+\usepackage{microtype}
+
 % Borders
 \usepackage[paper=a4paper,left=20mm,right=20mm,top=30mm,bottom=30mm]{geometry}
+\setlength{\parskip}{1em}
 
 \begin{document}
 \pagestyle{fancy} % Activate own pagestyle
@@ -45,18 +48,24 @@
 	% Pragmatism
 	% Assumptions
 	% Implications
+% Why we do qualitative research
+	% Feel for participants
+	% Qual: fluid, evolving, dynamic
+	% Quant: rigid, structured
+% Researchers want to change the world for good
 
-
-Grounded theory is a methodology to build theory from data derived from qualitytive analysis. The presented methodology's epistemology presented in this chapter is based on two different traditions: Chicago Interactionism and Pragmatism. Chicago Interactionism is the fact that human beings do not react to actions of others but interpret them and act based on this interpretation. Pragmatism Pragmatism rejects the idea that the function of thought is to describe or represent. It embraces the idea that thought is an instrument to predict, to take action or to solve problems. Because the world is complex and ambiguous we cannot create a big methodology that works for everyone and everything. Thus, there are assumptions behind our methodology (the authors list 16 assumptions about actions, interactions and others). These assumptions and the fact that events are always the result of multiple factors lead to methodological implications. The authors do not want to \enquote{reduce understanding of action/interaction/[...] to one explanation or [...] scheme} but rather reveal basic concepts on different levels of abstractions. Then, one of the authors explains that he wants to develop knowledge that in turn will guide practice --- not just knowledge for the sake of having it.
+Grounded theory is a methodology to build theory from data derived from qualitytive analysis. The presented methodology's epistemology presented in this chapter is based on two different traditions: Chicago Interactionism and Pragmatism. Chicago Interactionism is the fact that human beings do not react to actions of others but interpret them and act based on this interpretation. Pragmatism Pragmatism rejects the idea that the function of thought is to describe or represent. It embraces the idea that thought is an instrument to predict, to take action or to solve problems. Because the world is complex and ambiguous we cannot create a big methodology that works for everyone and everything. Thus, there are assumptions behind our methodology (the authors list 16 assumptions about actions, interactions and others). These assumptions and the fact that events are always the result of multiple factors lead to methodological implications. The authors do not want to \enquote{reduce understanding of action/interaction [\ldots] to one explanation or [\ldots] scheme} but rather reveal basic concepts on different levels of abstractions. Then, one of the authors explains that he wants to develop knowledge that in turn will guide practice --- not just knowledge for the sake of having it.
 
 In the next section it is explained why we do qualitative research. The reason: because the research question should dictate the method and because this kind of research allows researchers \enquote{to get at the inner experience of the participants}. This means that a participant is not just a number on a spreadsheet but a individual with a culture, a background etc. that all must be taken into consideration. Quantitative reseachers have rather rigid and structured methods whereas qualitative reseachers have more fluid, evolving and dynamic research methods and will even reject practices such as objectivity and include personal experience.
 
 The authors conclude that people do research to change the world for good. The book should and cannot be perfect but will at least give you some insights on how to analyze data and how to do qualitative research. Unfortunately this book can only provide textual guidance. However, qualitative analysis can only be learned by doing it, much like a craft.
 
+{\tiny I especially like the Note at the end of the first chapter about it being too complicated for a beginning text on qualitative research.}
+
 \newpage
 
 \papertitle{CS07}{J. Corbin and A. Strauss, \enquote{Practical Considerations,} in Basics of Qualitative Research: Techniques and Procedures for Developing Grounded Theory, 3rd ed. Thousand Oaks, CA: Sage Publications, 2007, ch. 2.}
 
-Insert some text here!
+
 
 \end{document}
