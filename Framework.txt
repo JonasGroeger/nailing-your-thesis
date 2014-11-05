@@ -1,2 +1,4 @@
 ﻿1. Title of the paper.
 2. Motivation - Why have the document at all?
+3. Is the summary too close to the text?
+4. Too complicated sentences?
