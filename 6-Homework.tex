@@ -1,0 +1,69 @@
+\documentclass[a4paper,11pt,english]{scrartcl}
+
+% Language
+\usepackage{polyglossia}
+\setmainlanguage[variant=american]{english}
+
+% Make \today print in format "NN<st|nd|rd|th> MM YYYY"
+\usepackage{isodate}
+\origdate
+
+\usepackage{enumitem}
+
+\linespread{1.1}
+
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries\sffamily}{}{0pt}{}
+
+% Write something in bold, sans-serif and a little larger to indicate the title
+% Usage: \papertitle{DP79}{Title of the paper}
+\newcommand{\papertitle}[2]{
+	\section{[#1] #2}
+}
+
+% Own pagestyle (header and footer)
+\usepackage{fancyhdr}
+\fancyhf{} % Clear header and footer content
+\fancyhead[L]{{\small \textsf{WS 14/15, NYT}}}
+\fancyhead[C]{{\small \textsf{Homework 6}}}
+\fancyhead[R]{{\small \textsf{\today}}}
+\fancyfoot[C]{}
+
+% Text in quotes
+% Usage: \enquote{To be or not to be.}
+\usepackage[autostyle=true,english=american]{csquotes}
+
+% Borders
+\usepackage[paper=a4paper,left=15mm,right=15mm,top=20mm,bottom=20mm]{geometry}
+\setlength{\parskip}{0.4em}
+
+\begin{document}
+\pagestyle{fancy} % Activate own pagestyle
+
+\papertitle{MN07}{Myers, M. D., \& Newman, M. (2007). The qualitative interview in IS research: Examining the craft. Information and organization, 17(1), 2-26.}
+The qualitative interview is one of most often used and most important tools for gathering data to conduct qualitative research in Information Systems. However, the craft of condicting interviews has been largely seen as unproblematic and thus left unexamined. Rarely do scientific publications add any more detail than just a few numbers on how the interviews from which the research stems were conducted. This paper suggests that the qualitative interview is not as easy as it seems and tries to examine it.
+
+% State of the art and problems
+Interviews can be done in three different styles: Structured with a complete script, semi-structured with an imcomplete script and room for improvisation and group interviews. The paper focuses primarily on the first two and points out problems and pitfalls that occur in an interview situation such as the artificiality of the interview, lack of time, trust, entry and some more. Even in high-profile research journals where the reader could expect information on interview practices, they were rarely present (but might actually have taken place).
+
+% Dramaturgical model
+Then, the \enquote{dramaturgical model} is introduced which tries to frame the interview process within the model of a theatre drama. This model (originally developed for face-to-face interaction) was not developed in this paper but merely adopted and mapped to the face-to-face interview context. The interview is modeled as a drama with actors (interviewer, interviewee), performing on a stage (physical, cultural and social context), having a script (either complete or incomplete, norms, rituals, expected behavior). Other parts of the model are the audience (interviewer when interviewee speaks and vice versa), the entry (first impression), the exit and the overall performance (which takes all the prior aspects into consideration).
+
+% Guidelines
+Furthermore, some guidelines on how to do qualitative interviews are given.
+
+\begin{itemize}[noitemsep,topsep=0pt]
+	\item Situating the researcher: The researcher should know who he is and how that influences the interview situation. This will improve the write-up taking place later.
+	\item Minimise social dissonance: This involves having a good first impression to the interviewee, make him feel comfortable and adopt to the social and interview context.
+	\item Represent various \enquote{voices}: One should interview a broad range of subjects to avoid gaining a narrow view of i.e. an organization.
+	\item Everyone is an interpreter: One should recognize that everything that takes place is just an interpretation of ones self.
+	\item Use Mirroring in questions and answers: Use open questions and the mirroring technique to pose questions. The mirroring technique is about taking parts or the vocabulary of a sentence (i.e. a answer) and using it in posing a new question. This weakens the imposed world view of the researcher to the interviwee and vice versa.
+	\item Flexibility: Be flexible in conducting an interview. Adapt to the mood of the interviewee and leave room for discussion and improvisation. Therefore it is usually good to not have a fixed script.
+	\item Confidentiality of disclosures: In the first revision this mentions that interview data and technology must be kept secured. This revision was however replaced because it did not contain the aspect of ethics. The new revision involves that one has to (a) have permission from an ethics commitee and the interviewee, (b) treat people with respect and (c) commit to confidentiality and publication.
+\end{itemize}
+
+The revision was done because the initial model had some weaknesses. Another weakness includes the concept \enquote{that it [the model] can potentially encourage manipulative and cynical behaviour for one's own ends.}
+
+In conclusion, the model allows for some benefits. Among others, these contain for example the increased sensitivity of a researcher in the complexity of interviewing. However, dispite various theoretical benefits, qualitative interviewing still requires years of practise to master.
+
+\end{document}

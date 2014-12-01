@@ -1,0 +1,82 @@
+\documentclass[a4paper,12pt,english]{scrartcl}
+
+% Language
+\usepackage{polyglossia}
+\setmainlanguage[variant=american]{english}
+
+% Make \today print in format "NN<st|nd|rd|th> MM YYYY"
+\usepackage{isodate}
+\origdate
+
+\linespread{1.15}
+
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries\sffamily}{}{0pt}{}
+
+% Write something in bold, sans-serif and a little larger to indicate the title
+% Usage: \papertitle{DP79}{Title of the paper}
+\newcommand{\papertitle}[2]{
+	\section{[#1] #2}
+}
+
+% Own pagestyle (header and footer)
+\usepackage{fancyhdr}
+\fancyhf{} % Clear header and footer content
+\fancyhead[L]{{\small \textsf{WS 14/15, NYT}}}
+\fancyhead[C]{{\small \textsf{Homework 7}}}
+\fancyhead[R]{{\small \textsf{\today}}}
+\fancyfoot[C]{\thepage}
+
+% Text in quotes
+% Usage: \enquote{To be or not to be.}
+\usepackage[autostyle=true,english=american]{csquotes}
+
+% Subliminal refinements towards typographical perfection
+\usepackage{microtype}
+
+\usepackage{blindtext}
+
+% Borders
+\usepackage[paper=a4paper,left=20mm,right=20mm,top=30mm,bottom=30mm]{geometry}
+\setlength{\parskip}{0.4em}
+
+\begin{document}
+\pagestyle{fancy} % Activate own pagestyle
+
+\papertitle{S+07}{Sjoberg, D. I., Dyba, T., \& Jorgensen, M. (2007, May). The future of empirical methods in software engineering research. In Future of Software Engineering, 2007. FOSE'07 (pp. 358-378). IEEE.}
+
+In this paper the authors present the vision that empirical research methods should improve the knowledge about which software engineering technologies are feasible for which kinds of actors/activities/systems. Not only should the focus lie on developing new technologies but also on assessing the technology.
+
+In the seconds part, the authors provide insight into empirical methods going over primary research methods (experiments, surveys and action research) as well as secondary research methods (synthesis of publications).
+
+Then, as mentioned in the introduction, the vision of the paper is explained. At its heart, the vision is about creating knowledge about how useful a particular technology for a specific purpose is. This knowledge is then supposed to be fed into the creation process of new technology stacks. In evaluating a certain technology related to a task there will be arguments for and against that technology. These arguments must be quantified to allow evaluation. However, quantification in this context is complicated.
+
+The fourth chapter of the paper enumerates some challenges in achieving the vision. It mentions that there are only a small number of empirical studies in SE (software engineering) and the use of empirical methods to evaluate technologies is low. It also describes a goal that in the next 10 years this should be improved upon. Additionally, the quality of empirical studies in SE is low and should be improved too. This is described in detail, comparing the current state and how its supposed to be working in the future. Other aspects like the issue of synthesizing evidence and theory building are again described and explained in comparison tables (now vs. in 10 years).
+
+While the fourth chapter explains the challenges, the fifth chapter tries tries to provide a solution to them. The the problem of only a few empirical research papers in software engineering can be mitigated by educating researchers as well as practioneers and by providing them with guidelines on how to conduct this type of research. This will also improve quality. Low quality and transferability between research results and practice (and vice versa) can be countered by collaboration between adacemia and industry. Therefore, it can also be helpful to build upon a common research agenda. This will especially help the area of knowledge synthesis. The number of available resources (money, time) must also be largely increased. This is the foundation of having more research done in empirical SE research.
+
+\newpage
+
+\papertitle{E+08}{Easterbrook, S., Singer, J., Storey, M. A., \& Damian, D. (2008). Selecting empirical methods for software engineering research. In Guide to advanced empirical software engineering (pp. 285-311). Springer London.}
+
+The paper presents empirical methods for software engineering (SE) and evaluates them for their applicability for different kinds of research questions. It does so because the empirical methods seem not to be well catalogued.
+
+% Different kinds of research questions
+First of all, you should be clear about which kind of research question you have. There are exploratory questions, base-rate questions, relationship-related questions and knowledge questions. The question you pose must be precise and one must be able to validate the research and draw a conclusion.
+
+% What is your sense of truth
+Then, you must know which kind of truth you are fine with. There are four kinds of stances. (1) Positivism: You deconstruct a problem into very small parts and verify those integral parts. If all the parts are true, the theory is true. (2) Constructivism: Truth can only be obtained when having added context to a theory. A theory is only valid in its context. (3) Critical Theory: Research should help the ones that need it. (4) Pragmatism: Does whatever works upon knowing that all knowledge is incomplete. A researcher should be clear about which value system he is in and write that in his publication.
+
+% Theories should be build; has not been done well in the past
+In the past, empirical research in SE has failed to build theories. This blocks comparability between research results. Furthermore, few scientists explain how their theories are created and just present the final one.
+
+% Selecting a method
+Acknowledging that a theory should be built, a researcher has to select the method for his research question. A large number of research methods for empirical research in SE is available. The paper explains Controlled Experiments, Case Studies, Survey Research, Ethnographies, Action Research and Mixed-Methods Approaches. Thereby it provides examples on how specifically one goes about conducting research which a certain method.
+
+% Data collection for method
+After deciding which research method will be used, data collection is the next step. Multiple sources can improve the strength of the theory and cross-validate it. Most of the time, a blended data collection and analysis phase is recommended. This is due to the fact that some problems only arise upon first analyzing the data. Then, the data collection process can be adapted.
+
+% Validity
+While analyzing the data, the researcher tries to construct a valid theory. There are four kinds of validity: Construct, internal and external validity as well as reliability. They all focus on different aspects on how the study was done and decide weather the result is valid. Then, the authors provide some strategies on how to improve validity. At the very end the conclusion explains that there is no silver bullet in how to do empirical research.
+
+\end{document}
