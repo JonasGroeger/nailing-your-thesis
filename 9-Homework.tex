@@ -1,0 +1,105 @@
+\documentclass[a4paper,12pt,english]{scrartcl}
+
+% Language
+\usepackage{polyglossia}
+\setmainlanguage[variant=american]{english}
+
+% Make \today print in format "NN<st|nd|rd|th> MM YYYY"
+\usepackage{isodate}
+\origdate
+
+\linespread{1.15}
+
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries\sffamily}{}{0pt}{}
+
+% Write something in bold, sans-serif and a little larger to indicate the title
+% Usage: \papertitle{DP79}{Title of the paper}
+\newcommand{\papertitle}[2]{
+	\section{[#1] #2}
+}
+
+% Own pagestyle (header and footer)
+\usepackage{fancyhdr}
+\fancyhf{} % Clear header and footer content
+\fancyhead[L]{{\small \textsf{WS 14/15, NYT}}}
+\fancyhead[C]{{\small \textsf{Homework 9}}}
+\fancyhead[R]{{\small \textsf{\today}}}
+\fancyfoot[C]{\thepage}
+
+% Text in quotes
+% Usage: \enquote{To be or not to be.}
+\usepackage[autostyle=true,english=american]{csquotes}
+
+% Subliminal refinements towards typographical perfection
+\usepackage{microtype}
+
+\usepackage{blindtext}
+
+% Borders
+\usepackage[paper=a4paper,left=20mm,right=20mm,top=30mm,bottom=30mm]{geometry}
+\setlength{\parskip}{0.4em}
+
+\begin{document}
+\pagestyle{fancy} % Activate own pagestyle
+
+\papertitle{B+10}{Beel, J., Gipp, B., \& Wilde, E. (2010). Academic search engine optimization (ASEO). Journal of scholarly publishing, 41(2), 176-190.}
+
+In general, authors of papers want their papers to be found. It will get found if it is indexed and it has a high ranking.
+Therefore, Academic Search Engine Optimization was invented to help one in having a paper indexed and ranked high.
+
+In comparison to the traditional SEO of websites, ASEO is more difficult due to some specifics related to the practices of scientific publishing:
+academic search engines work differently and publishing is almost exclusively done in PDF.
+
+Different academic search engines use different algorithms to calculate the relevance of a paper.
+The higher the relevance, the higher a paper will be ranked.
+That leads to a higher placement in the search results that a user gets displayed.
+The academic search engine Google Scholar puts high relevance on papers whose title, author or publication match the user query.
+The citation count of a paper is another indicator how high the relevance will be.
+Aside from the text, images can only be considered if they are in a vector-based format.
+Google Scholar gathers the metadata of papers using an invite-based system where authors of affiliates can register their paper.
+The search engine then finds matching PDFs on the internet, which might also include older versions of a paper.
+
+Having understood the algorithm on a broad level, one can start optimizing his publications to have higher relevance.
+That means
+(1) picking non-popular keywords,
+(2) putting the keywords in important places like the title, abstract or the PDF metadata,
+(3) vectorizing images and
+(4) publishing the paper to open-access or to affiliates of Google Scholar.
+
+The paper has been criticized of making authors focus more on ranking rather than on scientific impact.
+However, this problem is one that traditional search engines also had when SEO got popular and will be solved by better filtering algorithms in ASEOs.
+
+\newpage
+
+\papertitle{S03}{Shaw, M. (2003, May). Writing good software engineering research papers: minitutorial. In Proceedings of the 25th international conference on software engineering (pp. 726-736). IEEE Computer Society.}
+
+This paper wants to introduce the reader on how to write a good paper in the field of software engineering.
+In general, papers are contributions to the scientific community and show scientific progress.
+Writing a paper, one should be clear and precise about three main elements:
+
+\begin{enumerate}
+	\item \textbf{Research question:} What is the problem you want to solve? Why does that matter?
+	\item \textbf{Result:} What have you added to the body of software engineering knowledge?
+	\item \textbf{Validation:} Proof that it works in a more general context; outside of your environment.
+\end{enumerate}
+
+First, you should make your research question clear.
+State the problem that you are trying to solve.
+The paper explains the most common types of research questions and analyzes their accept / reject rate at a ICSE 2002, a software engineering conference.
+
+Second, explain what you have added to the body of knowledge.
+Again, the paper explains different types of research results and analyzes their accept / reject rate at ICSE 2002.
+Committees want your claims to be reasoned appropriately.
+Also, the ralation of your work in relation to the work of others should be explained.
+
+Third, a scientific contribution has to create trust among researchers.
+This paper explains various means of validation and again, measures their accept / reject rate at the same conference.
+In general, committees look for solid evidence that supports the claims you made in your result.
+
+The process of building and managing 1., 2. and 3. is called a research strategy.
+However, not all tuples of \enquote{type of research question}, \enquote{type of research result} and \enquote{type of validation} are appropriate.
+
+The last important point of this paper is that abstracts are important and the body of a paper should deliver what its abstract promises.
+
+\end{document}
