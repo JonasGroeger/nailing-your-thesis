@@ -1,0 +1,59 @@
+\documentclass[a4paper,12pt,english]{scrartcl}
+
+% Language
+\usepackage{polyglossia}
+\setmainlanguage[variant=american]{english}
+
+% Make \today print in format "NN<st|nd|rd|th> MM YYYY"
+\usepackage{isodate}
+\origdate
+
+\linespread{1.15}
+
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries\sffamily}{}{0pt}{}
+
+% Write something in bold, sans-serif and a little larger to indicate the title
+% Usage: \papertitle{DP79}{Title of the paper}
+\newcommand{\papertitle}[2]{
+	\section{[#1] #2}
+}
+
+% Own pagestyle (header and footer)
+\usepackage{fancyhdr}
+\fancyhf{} % Clear header and footer content
+\fancyhead[L]{{\small \textsf{WS 14/15, NYT}}}
+\fancyhead[C]{{\small \textsf{Homework 12}}}
+\fancyhead[R]{{\small \textsf{\today}}}
+\fancyfoot[C]{\thepage}
+
+% Text in quotes
+% Usage: \enquote{To be or not to be.}
+\usepackage[autostyle=true,english=american]{csquotes}
+
+% Subliminal refinements towards typographical perfection
+\usepackage{microtype}
+
+\usepackage{blindtext}
+
+% Borders
+\usepackage[paper=a4paper,left=20mm,right=20mm,top=30mm,bottom=30mm]{geometry}
+\setlength{\parskip}{0.4em}
+
+\begin{document}
+\pagestyle{fancy} % Activate own pagestyle
+
+\papertitle{REVIEW}{From Developer Networks to Verified Communities: A Fine-Grained Approach}
+
+The paper \enquote{From Developer Networks to Verified Communities: A Fine-Grained Approach} tries to create a map of developer networks in software development using the version control system as its data source. It claims to also extract the quality of the collaboration between developers.
+
+What the paper did not analyze however, is contributions that are not in the form of sourcecode. Often times a project has many important developers that dont nessecarily write code
+but coordinate and create architectures above source file level. The used method might work for open source projects like \enquote{The Kernel}. However, as soon as this methodology
+is used in companies where not all contributions are source code, it loses a great chunk of its accuracy and completeness. This even happens when a project is open sourced by a company but with read-only access.
+
+Within smaller projects this method is just too much. Just look at the commit history and you can easily grasp who is networking with whom.
+
+So, we have all this nice data about the developer networks. What now? Is this of any use to the software engineering body of knowledge? When making management decisions using those graphs, i.e. putting collaborating developers in one office for ease of communication, wouldn't the developers go to the manager and request that themselves?
+
+Nevertheless, nice read and nice graphs.
+\end{document}
